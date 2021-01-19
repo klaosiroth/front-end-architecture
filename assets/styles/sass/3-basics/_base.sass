@@ -1,0 +1,25 @@
+html
+  // border-box box modal allows us to add padding and border to our elements without increase
+  box-sizing: border-box
+  background: white
+
+  // WHAT IS THIS?!
+  // We inherit box-sizing: boder-box; from our <html> seletor
+  // Apparently this is a bit better that applying box-sizing: border-box; directly to the * 
+
+* *:before *:after
+  box-sizing: inherit
+
+.container
+  overflow: auto
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 20px
+
+  img
+    max-width: 100% // temp style, remove after
+  
+  .containerWide
+    max-width: 1400px
+
